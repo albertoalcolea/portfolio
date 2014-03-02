@@ -1,0 +1,578 @@
+@font-face {
+  font-family: 'Concert One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Concert One'), local('ConcertOne-Regular'), url(../fonts/ConcertOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Shadows Into Light Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light Two'), local('ShadowsIntoLightTwo-Regular'), url(../fonts/ShadowsIntoLightTwo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial-Regular'), url(../fonts/Questrial-Regular.ttf) format('truetype');
+}
+
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+header, section, article, footer, nav { 
+	display: block; 
+}
+
+
+body {
+	/*color: #E7E7E7;*/
+	color: #474747;
+	font-family: 'Shadows Into Light Two';
+	font-size: 18px;
+	letter-spacing: 3px;
+	/*background: #CDCCCD url(../img/bg-white.png);*/
+}
+
+a {
+	color: #E7E7E7;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999999;
+}
+
+h2 {
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+header {
+	background: #CDCCCD url(../img/bg-white.png);
+	overflow: hidden;
+	padding: 48px 16% 48px 16%;
+	text-transform: uppercase;
+}
+
+header img {
+	border: 2px solid #222222;
+	float: left;
+	margin-right: 27px;
+}
+
+header h1 {
+	color: black;
+	font-family: 'Questrial', sans-serif, cursive;
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 41px;
+	margin-top: 32px;	
+}
+
+header h2 {
+	color: #532622;	
+	line-height: 38px;
+	margin-bottom: 14px;
+	font-family: 'Concert One', cursive;
+	font-size: 38px;	
+}
+
+header h2 strong {
+	color: #22533D;
+	font-size: 41px;
+	font-weight: bold;
+}
+
+header h3 {
+	color: #444444;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 17px;
+	letter-spacing: 1px;
+	text-align: right;
+}
+
+#content {
+	width: 100%;
+	overflow: hidden;
+	/*background: #CDCCCD url(../img/bg-white.png);*/
+}
+
+#development-section {
+	background: #415c4c url(../img/bg-green.png);
+	color: #ccc;
+}
+
+#portfolio-section {
+	background: #CDCCCD url(../img/bg.png);
+}
+
+#music-section {
+	background: #4a3333 url(../img/bg-red.png);	
+	color: #ccc;
+}
+
+article {
+	clear: both;
+	margin: auto;
+	overflow: hidden;
+	padding: 18px 0px 36px 18px;
+	width: 1024px;
+}
+
+article h2 {
+	background: #222;
+	display: inline-block;
+	font-family: 'Concert One';
+	font-size: 31.5px;
+	margin: 18px 0 20px 0;
+	padding: 4px 18px 18px 18px;
+
+	border-radius: 10px;
+
+	/* others */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.lateral-info {
+	display: inline-block;
+	vertical-align: top;
+	width: 450px;
+}
+
+#personal-info {
+	margin-right: 50px;
+}
+
+.info {
+	margin: 0 auto;
+	width: 94%;
+}
+
+.info h3 {
+	font-family: 'Questrial', sans-serif, cursive;
+	margin-bottom: 14px;
+	margin-left: 10px;
+}
+
+.info p {
+	margin-bottom: 27px;
+}
+
+#languages {
+	display: inline-block;
+	margin-left: 10px;
+	/*width: 53%;*/
+	width: 60%;
+}
+
+#languages dt {
+	clear: both;
+	float: left;
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+#languages dd {
+	float: right;
+	letter-spacing: -1px;
+}
+
+.point, .no-point {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+
+	border-radius: 7px;
+
+	/* others */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.point {
+	/*background: #223753;*/
+	background: #BBB;
+	box-shadow: 4px 1px 6px #343434;
+}
+
+.no-point {
+	/*background: #CDCCCD;*/
+	background: #323232;
+}
+
+#more-github {
+	font-family: 'Questrial', sans-serif, cursive;
+	margin: 5px 0 0 17px;
+}
+
+#more-github img {
+	margin-right: 9px;
+}
+
+#more-github a {
+	background: #343434;
+	padding: 9px 18px 9px 0px;
+
+	border-radius: 10px;
+	transition: background-color .5s;
+
+	/* others */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	-ms-transition: background-color .5s;
+}
+
+#more-github a:hover {
+	background: #3B3B3B;
+}
+
+#projects-list {
+	/*padding-left: 85px;*/
+	padding-left: 28px;
+	width: 905px;
+}
+
+#projects-list article {
+	border: 5px solid #fff;
+	box-shadow: 0 0 0 1px #c9caca, 2px 2px 2px rgba(0,0,0,.1);
+	display: inline-block;
+	height: 183px;
+	margin: 0 28px 25px 0;
+	padding: 0;
+	text-align: center;
+	width: 255px;
+	-webkit-box-shadow: 0 0 0 1px #c9caca, 2px 2px 2px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0 0 1px #c9caca, 2px 2px 2px rgba(0,0,0,.1);
+	-o-box-shadow: 0 0 0 1px #c9caca, 2px 2px 2px rgba(0,0,0,.1);
+	-ms-box-shadow: 0 0 0 1px #c9caca, 2px 2px 2px rgba(0,0,0,.1);
+}
+
+#projects-list figure {
+	display: block;
+	height: 183px;
+	overflow: hidden;
+	position: relative;
+	width: 255px;
+}
+
+#projects-list article img {
+	display: block;
+	height: 183px;
+	position: relative;
+	width: 255px;
+}
+
+#projects-list .project-info {
+	background: #343642 url(../img/bg-blue.png) repeat top left;
+	display: block;
+	height: 158px; /* 183-25 */
+	left: 0;
+	overflow: hidden;
+	padding-top: 25px;
+	position: absolute;
+	top: 0;
+	width: 255px;
+}
+
+#projects-list h3 {
+	color: white;
+	font-family: 'Concert One';
+	font-size: 18px;
+	line-height: 1em;
+	margin: 0 0 14px 0;
+	text-transform: uppercase;
+}
+
+#projects-list p {
+	color: #ccc;
+	font-family: 'Shadows Into Light Two';
+	position: relative;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0 10px 0 10px;
+}
+
+#projects-list .icon-view,
+#projects-list .icon-link {
+	display: inline-block;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -999em;
+	vertical-align: bottom;
+	width: 32px;
+
+	opacity: 1;
+	transition: opacity .5s;
+
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	
+
+	/* others */
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+}
+
+#projects-list .icon-view:hover,
+#projects-list .icon-link:hover {
+	opacity: 0.5;
+}
+
+#projects-list .icon-view {
+	background: url(../img/icon-view.png)top left no-repeat;
+}
+
+#projects-list .icon-link {
+	background: url(../img/icon-link.png)top left no-repeat;
+}
+
+#albums {
+	/*background: black;*/
+	margin-bottom: 27px;
+	/*max-width: 100%;*/
+	padding: 18px;
+	/*text-align: center;*/
+	width: 54%;
+
+	opacity: 0.6;
+	/*border-radius: 15px;
+	transition: background-color .5s;*/
+
+	/* IE 8 */
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";*/
+
+	/* others */
+	/*-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;*/
+}
+
+#albums ul {
+	list-style-type: none;
+	/*margin: auto;*/
+}
+
+#albums ul li {
+	display: inline-block;
+	/*border: 4px solid black;*/
+
+	/*border-radius: 10px;*/
+
+	/* others */
+	/*-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;*/
+	line-height: 0;
+}
+
+#albums ul li:hover {
+	/*border-color: #FFA530;*/
+}
+
+#albums ul li img {
+	border: 1px solid #999;
+	height: 150px;
+}
+
+#albums a {
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity .4s;
+
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";	
+
+	/* others */
+	-webkit-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-o-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+}
+
+#albums a:hover {
+	opacity: 1;
+
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";	
+}
+
+.info-album {
+	color: #AAAAAA;
+	display: none;
+	height: 168px; /* 150 + 18 */
+	/*margin: auto;
+	width: 80%;*/
+	width: 41%;
+	vertical-align: bottom;
+}
+
+.info-album a {
+	color: #777777;
+}
+
+.info-album a:hover {
+	color: white;
+}
+
+.info-album dl {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 23px;
+	width: 100%;
+	word-spacing: -1px;
+}
+
+.info-album dt {
+	clear: both;
+	float: left;
+	min-width: 60px;
+}
+
+.info-album dd {
+	float: left;
+	font-weight: bold;
+	margin-left: 10px;
+	min-width: 200px;
+}
+
+.info-album p {
+	clear: both;
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: right;
+	margin-top: 5px;
+}
+
+footer {
+	background: #222222;
+	clear: both;
+	color: white;
+	font-size: 15px;
+	padding: 54px 0 63px 72px;
+}
+
+footer h2 {
+	font-family: 'Questrial', sans-serif, cursive;
+	margin-bottom: 19px;
+}
+
+footer nav ul {
+	list-style-type: none;
+}
+
+footer nav ul li {
+	display: inline;
+}
+
+footer nav ul li a {
+	background: #343434;
+	display: inline-block;
+	margin: 2px 1px 7px;
+	padding: 9px 9px 4px;
+
+	border-radius: 10px;
+	transition: background-color .5s;
+
+	/* others */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	-ms-transition: background-color .5s;
+}
+
+footer nav ul li a:hover {
+	background: #464646;
+}
+
+
+@media screen and (max-width: 1024px) {
+	article {
+		width: 95%;
+	}
+
+	#projects-list {
+		padding-left: 0;
+		width: 97%;
+	}
+
+	.lateral-info {
+		width: 45%;
+	}
+
+	#albums {
+		width: 54%;
+	}
+
+	.info-album {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.lateral-info {
+		width: 43%;
+	}
+
+	#languages {
+		width: 85%
+	}
+
+	#more-github {
+		font-size: 74%;
+		margin: 25px 0 0 0;
+	}
+
+	#more-github a img {
+		height: 45px;
+		width: 45px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.lateral-info {
+		width: 370px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		padding-right: 5%;
+	}
+
+	header img {
+		float: none;
+	}
+
+	header h1 {
+		font-size: 30px;
+	}
+
+	article {
+		padding-left: 0px;
+	}
+
+	#projects-list {
+		padding-left: 15%;
+	}
+
+	#albums, .info-album {
+		width: 330px;
+	}
+
+	footer {
+		padding: 54px 7% 63px 8%;
+	}
+}
