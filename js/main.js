@@ -1,5 +1,3 @@
-//$("#projects-list article:nth-child(3n+3)").css("margin-right", 0);
-
 document.createElement('figure');
 document.createElement('figcaption');
 

@@ -32,12 +32,10 @@ header, section, article, footer, nav {
 
 
 body {
-	/*color: #E7E7E7;*/
 	color: #474747;
 	font-family: 'Shadows Into Light Two';
 	font-size: 18px;
 	letter-spacing: 3px;
-	/*background: #CDCCCD url(../img/bg-white.png);*/
 }
 
 a {
@@ -102,7 +100,6 @@ header h3 {
 #content {
 	width: 100%;
 	overflow: hidden;
-	/*background: #CDCCCD url(../img/bg-white.png);*/
 }
 
 #development-section {
@@ -170,7 +167,6 @@ article h2 {
 #languages {
 	display: inline-block;
 	margin-left: 10px;
-	/*width: 53%;*/
 	width: 60%;
 }
 
@@ -199,13 +195,11 @@ article h2 {
 }
 
 .point {
-	/*background: #223753;*/
 	background: #BBB;
 	box-shadow: 4px 1px 6px #343434;
 }
 
 .no-point {
-	/*background: #CDCCCD;*/
 	background: #323232;
 }
 
@@ -239,7 +233,6 @@ article h2 {
 }
 
 #projects-list {
-	/*padding-left: 85px;*/
 	padding-left: 28px;
 	width: 905px;
 }
@@ -340,44 +333,23 @@ article h2 {
 }
 
 #albums {
-	/*background: black;*/
 	margin-bottom: 27px;
-	/*max-width: 100%;*/
 	padding: 18px;
-	/*text-align: center;*/
 	width: 54%;
 
 	opacity: 0.6;
-	/*border-radius: 15px;
-	transition: background-color .5s;*/
 
 	/* IE 8 */
-	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";*/
-
-	/* others */
-	/*-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 
 #albums ul {
 	list-style-type: none;
-	/*margin: auto;*/
 }
 
 #albums ul li {
 	display: inline-block;
-	/*border: 4px solid black;*/
-
-	/*border-radius: 10px;*/
-
-	/* others */
-	/*-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;*/
 	line-height: 0;
-}
-
-#albums ul li:hover {
-	/*border-color: #FFA530;*/
 }
 
 #albums ul li img {
@@ -411,8 +383,6 @@ article h2 {
 	color: #AAAAAA;
 	display: none;
 	height: 168px; /* 150 + 18 */
-	/*margin: auto;
-	width: 80%;*/
 	width: 41%;
 	vertical-align: bottom;
 }
