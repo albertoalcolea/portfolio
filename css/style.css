@@ -149,6 +149,11 @@ article h2 {
 	margin-right: 50px;
 }
 
+#skills {
+	margin-left: 50px;
+	width: 400px;
+}
+
 .info {
 	margin: 0 auto;
 	width: 94%;
@@ -475,29 +480,46 @@ footer nav ul li a:hover {
 
 	#projects-list {
 		padding-left: 0;
+		text-align: center;
 		width: 97%;
 	}
 
-	.lateral-info {
+	.lateral-info, 
+	#skills {
 		width: 45%;
 	}
 
+	#skills {
+		margin-left: 0;
+	}
+
 	#albums {
-		width: 54%;
+		width: 100%;
+	}
+
+	#albums ul {
+		text-align: center;
 	}
 
 	.info-album {
-		width: 40%;
+		margin: 0 auto;
+		width: 400px;
 	}
 }
 
+
 @media screen and (max-width: 850px) {
 	.lateral-info {
-		width: 43%;
+		display: block;
+		width: 100%;
+	}
+
+	#skills {
+		padding-top: 35px;
 	}
 
 	#languages {
-		width: 85%
+		width: 72%
 	}
 
 	#more-github {
@@ -509,10 +531,22 @@ footer nav ul li a:hover {
 		height: 45px;
 		width: 45px;
 	}
+
+	#albums {
+		width: 100%;
+	}
+
+	.info-album,
+	#skills {
+		margin: 0 auto;
+		width: 400px;
+	}
 }
 
+
 @media screen and (max-width: 600px) {
-	.lateral-info {
+	.lateral-info,
+	#skills {
 		width: 370px;
 	}
 }

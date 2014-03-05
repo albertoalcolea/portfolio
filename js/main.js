@@ -1,8 +1,11 @@
+var MAX_SIZE_ALBUM = 1024;
+
 document.createElement('figure');
 document.createElement('figcaption');
 
 $(document).ready(function() {
-	var selected = change_album('renol2');
+	var currentlyAlbum = 'renol2';
+	var selected = change_album(currentlyAlbum);
 
 	$('figcaption').css('top', '-183px');
 
@@ -15,8 +18,8 @@ $(document).ready(function() {
 	});
 
 	$('.cover').click(function() {
-		var album = $(this).attr('id').split('-')[1];
-		selected = change_album(album);
+		currentlyAlbum = $(this).attr('id').split('-')[1];
+		selected = change_album(currentlyAlbum);
 	});
 
 	$('.cover').hover(function() {
@@ -26,12 +29,20 @@ $(document).ready(function() {
 			$(this).css({ opacity: 0.3 });
 		}
 	});
-});
 
+	$(window).resize(function() {
+		change_album(currentlyAlbum);
+	});
+});
 
 function change_album(newAlbum) {
 	$('.info-album').css('display', 'none');
-	$('#' + newAlbum).css('display', 'inline-block');
+
+	if ( $(document).width() > MAX_SIZE_ALBUM ) {
+		$('#' + newAlbum).css('display', 'inline-block');
+	} else {
+		$('#' + newAlbum).css('display', 'block');
+	}
 
 	$('.cover').css({ opacity: 0.3 });
 	$('#cover-' + newAlbum).css({ opacity: 1 });
