@@ -4,8 +4,8 @@ document.createElement('figure');
 document.createElement('figcaption');
 
 $(document).ready(function() {
-	var currentlyAlbum = 'renol2';
-	var selected = change_album(currentlyAlbum);
+	var selected = 'renol2';
+	change_album(selected);
 
 	$('figcaption').css('top', '-183px');
 
@@ -18,20 +18,20 @@ $(document).ready(function() {
 	});
 
 	$('.cover').click(function() {
-		currentlyAlbum = $(this).attr('id').split('-')[1];
-		selected = change_album(currentlyAlbum);
+		selected = $(this).attr('id').split('-')[1];
+		change_album(selected);
 	});
 
 	$('.cover').hover(function() {
 		$(this).css({ opacity: 1 });
 	}, function() {
-		if ($(this).attr('id') != selected) {
+		if ($(this).attr('id') != 'cover-' + selected) {
 			$(this).css({ opacity: 0.3 });
 		}
 	});
 
 	$(window).resize(function() {
-		change_album(currentlyAlbum);
+		change_album(selected);
 	});
 });
 
@@ -46,6 +46,4 @@ function change_album(newAlbum) {
 
 	$('.cover').css({ opacity: 0.3 });
 	$('#cover-' + newAlbum).css({ opacity: 1 });
-
-	return 'cover-' + newAlbum;
 }
