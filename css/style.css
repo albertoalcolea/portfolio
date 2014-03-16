@@ -180,6 +180,11 @@ article h2 {
 	text-align: left;
 }
 
+.skills-col ul li {
+	font-size: 0.9em;
+	margin-bottom: 5px;
+}
+
 #more-github {
 	font-family: 'Questrial', sans-serif, cursive;
 	margin: 5px 0 0 17px;
