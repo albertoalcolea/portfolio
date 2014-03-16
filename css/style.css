@@ -149,11 +149,6 @@ article h2 {
 	margin-right: 50px;
 }
 
-#skills {
-	margin-left: 50px;
-	width: 400px;
-}
-
 .info {
 	margin: 0 auto;
 	width: 94%;
@@ -161,6 +156,7 @@ article h2 {
 
 .info h3 {
 	font-family: 'Questrial', sans-serif, cursive;
+	letter-spacing: 4px;
 	margin-bottom: 14px;
 	margin-left: 10px;
 }
@@ -169,43 +165,22 @@ article h2 {
 	margin-bottom: 27px;
 }
 
-#languages {
-	display: inline-block;
-	margin-left: 10px;
-	width: 60%;
+#skills {
+	border-top: 1px solid #999;
+	margin-top: 50px;
+	padding-top: 30px;
+	text-align: center;
 }
 
-#languages dt {
-	clear: both;
+.skills-col {
 	float: left;
-	font-size: 1.17em;
-	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	width: 25%;
 }
 
-#languages dd {
-	float: right;
-	letter-spacing: -1px;
-}
-
-.point, .no-point {
-	display: inline-block;
-	height: 18px;
-	width: 18px;
-
-	border-radius: 7px;
-
-	/* others */
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-}
-
-.point {
-	background: #BBB;
-	box-shadow: 4px 1px 6px #343434;
-}
-
-.no-point {
-	background: #323232;
+.skills-col ul {
+	list-style-type: none;
 }
 
 #more-github {
@@ -484,13 +459,8 @@ footer nav ul li a:hover {
 		width: 97%;
 	}
 
-	.lateral-info, 
-	#skills {
+	.lateral-info {
 		width: 45%;
-	}
-
-	#skills {
-		margin-left: 0;
 	}
 
 	#albums {
@@ -507,19 +477,10 @@ footer nav ul li a:hover {
 	}
 }
 
-
 @media screen and (max-width: 850px) {
 	.lateral-info {
 		display: block;
 		width: 100%;
-	}
-
-	#skills {
-		padding-top: 35px;
-	}
-
-	#languages {
-		width: 72%
 	}
 
 	#more-github {
@@ -536,17 +497,23 @@ footer nav ul li a:hover {
 		width: 100%;
 	}
 
-	.info-album,
-	#skills {
+	.info-album {
 		margin: 0 auto;
 		width: 400px;
 	}
 }
 
+@media screen and (max-width: 700px) {
+	.skills-col {
+		display: inline-block;
+		float: none;
+		margin-bottom: 30px;
+		width: 220px;
+	}
+}
 
 @media screen and (max-width: 600px) {
-	.lateral-info,
-	#skills {
+	.lateral-info {
 		width: 370px;
 	}
 }
