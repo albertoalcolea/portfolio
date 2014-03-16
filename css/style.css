@@ -162,6 +162,7 @@ article h2 {
 
 .info p {
 	margin-bottom: 27px;
+	padding: 0 30px;
 }
 
 #skills {
@@ -401,6 +402,8 @@ article h2 {
 	font-style: italic;
 	text-align: right;
 	margin-top: 5px;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 footer {
