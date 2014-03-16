@@ -167,6 +167,11 @@ article h2 {
 	text-align: center;
 }
 
+#skills ul {
+	margin-left: 50px;
+	text-align: left;
+}
+
 .skills-col {
 	float: left;
 	text-align: center;
