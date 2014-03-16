@@ -161,15 +161,10 @@ article h2 {
 }
 
 #skills {
-	border-top: 1px solid #888;
+	border-top: 1px dashed #888;
 	margin-top: 40px;
 	padding-top: 35px;
 	text-align: center;
-}
-
-#skills ul {
-	margin-left: 50px;
-	text-align: left;
 }
 
 .skills-col {
@@ -181,6 +176,8 @@ article h2 {
 
 .skills-col ul {
 	list-style-type: none;
+	margin-left: 50px;
+	text-align: left;
 }
 
 #more-github {
