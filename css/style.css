@@ -266,6 +266,7 @@ article h2 {
 	color: white;
 	font-family: 'Concert One';
 	font-size: 18px;
+	letter-spacing: 3px;
 	line-height: 1em;
 	margin: 0 0 14px 0;
 	text-transform: uppercase;
@@ -277,11 +278,13 @@ article h2 {
 	position: relative;
 	font-size: 14px;
 	font-weight: 500;
+	margin: 0 0 20px 0;
 	padding: 0 10px 0 10px;
 }
 
 #projects-list .icon-view,
-#projects-list .icon-link {
+#projects-list .icon-link,
+#projects-list .icon-source {
 	display: inline-block;
 	height: 32px;
 	overflow: hidden;
@@ -303,7 +306,8 @@ article h2 {
 }
 
 #projects-list .icon-view:hover,
-#projects-list .icon-link:hover {
+#projects-list .icon-link:hover,
+#projects-list .icon-source:hover {
 	opacity: 0.5;
 }
 
@@ -313,6 +317,10 @@ article h2 {
 
 #projects-list .icon-link {
 	background: url(../img/icon-link.png)top left no-repeat;
+}
+
+#projects-list .icon-source {
+	background: url(../img/icon-source.png)top left no-repeat;	
 }
 
 #albums {
