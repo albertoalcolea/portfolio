@@ -120,7 +120,7 @@ article {
 	clear: both;
 	margin: auto;
 	overflow: hidden;
-	padding: 18px 0px 36px 18px;
+	padding: 18px 0 36px 0;
 	width: 1024px;
 }
 
@@ -465,7 +465,7 @@ footer nav ul li a:hover {
 	}
 
 	#projects-list {
-		padding-left: 0;
+		padding-left: 3%;
 		text-align: center;
 		width: 97%;
 	}
@@ -475,6 +475,7 @@ footer nav ul li a:hover {
 	}
 
 	#albums {
+		padding: 0;
 		width: 100%;
 	}
 
@@ -502,10 +503,6 @@ footer nav ul li a:hover {
 	#more-github a img {
 		height: 45px;
 		width: 45px;
-	}
-
-	#albums {
-		width: 100%;
 	}
 
 	.info-album {
@@ -546,15 +543,29 @@ footer nav ul li a:hover {
 		padding-left: 0px;
 	}
 
-	#projects-list {
-		padding-left: 5%;
+	.info p {
+		margin: 0 20px 27px 20px;
 	}
 
-	#albums, .info-album {
-		width: 330px;
+	#projects-list {
+		padding-left: 6%;
+	}
+
+	#albums ul li {
+		margin-bottom: 10px;
 	}
 
 	footer {
 		padding: 54px 7% 63px 8%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#albums ul li {
+		display: block;
+	}
+
+	.info-album {
+		width: 100%;
 	}
 }
