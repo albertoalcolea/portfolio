@@ -1,4 +1,4 @@
 portfolio
 =========
 
-My personal portfolio: http://albertoalcolea.com
+Old portfolio
